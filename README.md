@@ -98,9 +98,9 @@ python gemini.py
 ### Sample Reports  
 Below are sample output reports. 
 <center>
-![image](https://github.com/user-attachments/assets/3a6e3a23-b1e6-4b6a-81bc-5f4fa7d3e94a)
-![image](https://github.com/user-attachments/assets/a8047276-c073-40d6-995a-e0f9103c286f)
-![image](https://github.com/user-attachments/assets/6f6e60c6-eb55-458f-a360-c27f02279230)
+![image](https://github.com/user-attachments/assets/1ade8f7d-4fb6-42ce-9566-9264c391ec64)
+![image](https://github.com/user-attachments/assets/8984b89a-6eda-484d-a180-f0ae60f6bd90)
+![image](https://github.com/user-attachments/assets/7dc6f1d3-354a-470e-9b2c-28726a657c84)
 
 ---
 
