@@ -1,25 +1,21 @@
----
-
 # 🧠 **EEG Signal Analysis and Recommendation System**
 
 ## Project Overview
 
 This project presents a comprehensive system that uses **EEG signals** to provide real-time health analysis and personalized recommendations. The system processes EEG data to assess various physiological and psychological states, including:
-- Mental states
-- Cognitive load
-- Emotions
+- Mental states  
+- Cognitive load  
+- Emotions  
 
 The signals are first subjected to **biomedical signal preprocessing**, then fed into deep learning models trained on specialized datasets targeting these states. The outputs from these models are processed by a **Large Language Model (LLM)** to generate a detailed health report. This report provides cumulative insights into a person's well-being, including recommendations for:
-
-- Personalized activities
-- Dietary plans
-- Medical advice
+- Personalized activities  
+- Dietary plans  
+- Medical advice  
 
 By correlating multiple EEG signals, the system can identify potential health risks and offer tailored suggestions, such as:
-
-- Rest or sleep recommendations
-- Focus and cognitive load management
-- Consultation with a healthcare provider
+- Rest or sleep recommendations  
+- Focus and cognitive load management  
+- Consultation with a healthcare provider  
 
 The system offers a holistic view of a person's health, enabling them to make informed decisions for a healthier lifestyle.
 
@@ -31,35 +27,28 @@ The system offers a holistic view of a person's health, enabling them to make in
    - A dataset for emotion recognition based on EEG signals.  
    - Includes valence, arousal, and dominance ratings based on audiovisual stimuli.  
    - 🧠 **EEG Channels**: 14 channels with a sampling rate of 128 Hz.  
+   - [DREAMER Dataset](https://zenodo.org/record/546113)
 
 2. **INRIA BCI Challenge Dataset**:  
    - A dataset for brain-computer interface classification focused on error-related potentials (ERP).  
    - 🧠 **EEG Sensors**: 56 passive EEG sensors, recorded at 200 Hz.  
+   - [INRIA BCI Challenge Dataset](https://www.kaggle.com/c/inria-bci-challenge)
 
 ---
 
 ## 🗂️ **Files and Functions**
 
-| File           | Description                                                                 |
-|----------------|-----------------------------------------------------------------------------|
-| `bcipre.py`    | Preprocessing script for the BCI dataset.                                  |
-| `bcitrain.py`  | Training script for the BCI model.                                         |
-| `bcitest.py`   | Testing script for the trained BCI model.                                  |
-| `dreamerpre.py`| Preprocessing script for the DREAMER dataset.                              |
-| `drtrain.py`   | Training script for the DREAMER model.                                     |
-| `drtest.py`    | Testing script for the trained DREAMER model.                              |
-| `biogpt.py`    | Inference script to get predictions from trained models.                   |
-| `gemini.py`    | Generates the health report using a large language model (LLM).            |
-| `htmlgen.py`   | Converts the health report into a visually appealing HTML page.            |
-
----
-
-## ⚙️ **Requirements**
-To run this project, you need the following dependencies. Install them via the `requirements.txt` file:
-
-```bash
-pip install -r requirements.txt
-```
+| File           | Description                                                                 | Outputs Report                                               |
+|----------------|-----------------------------------------------------------------------------|-------------------------------------------------------------|
+| `bcipre.py`    | Preprocessing script for the BCI dataset.                                  | Preprocessed EEG data for error-related potential analysis. |
+| `bcitrain.py`  | Training script for the BCI model.                                         | Trained model for detecting ERP states.                     |
+| `bcitest.py`   | Testing script for the trained BCI model.                                  | Test accuracy, confusion matrix, and predictions.           |
+| `dreamerpre.py`| Preprocessing script for the DREAMER dataset.                              | Preprocessed EEG data for emotion recognition.              |
+| `drtrain.py`   | Training script for the DREAMER model.                                     | Trained model for emotion state classification.             |
+| `drtest.py`    | Testing script for the trained DREAMER model.                              | Test accuracy, confusion matrix, and predictions.           |
+| `biogpt.py`    | Inference script to get predictions from trained models.                   | Psychological parameters: valence, arousal, and dominance.  |
+| `gemini.py`    | Generates the health report using a large language model (LLM).            | Personalized health recommendations.                        |
+| `htmlgen.py`   | Converts the health report into a visually appealing HTML page.            | A user-friendly HTML health report.                         |
 
 ---
 
@@ -99,6 +88,21 @@ python gemini.py
 
 ---
 
+## 🖼️ **Visuals and Pipeline**
+
+### Overall Pipeline  
+![Pipeline](https://github.com/user-attachments/assets/fd777c6b-6584-439e-9034-fce58b694226)
+
+
+
+### Sample Reports  
+Below are sample output reports. 
+<center>
+![image](https://github.com/user-attachments/assets/3a6e3a23-b1e6-4b6a-81bc-5f4fa7d3e94a)
+![image](https://github.com/user-attachments/assets/a8047276-c073-40d6-995a-e0f9103c286f)
+![image](https://github.com/user-attachments/assets/6f6e60c6-eb55-458f-a360-c27f02279230)
+
+---
 
 ## 🚀 **Expected Benefits**
 
@@ -119,4 +123,3 @@ python gemini.py
 ### 🌟 **Show Your Support**
 If you find this project helpful, give it a ⭐ on GitHub and share it with others! 😊
 
----
