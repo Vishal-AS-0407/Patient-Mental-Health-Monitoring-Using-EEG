@@ -88,21 +88,20 @@ python gemini.py
 
 ---
 
-## 🖼️ **Visuals and Pipeline**
+## 🖼️ **Outputs and Pipeline**
 
 ### Overall Pipeline  
 ![Pipeline](https://github.com/user-attachments/assets/fd777c6b-6584-439e-9034-fce58b694226)
 
-
-
 ### Sample Reports  
-Below are sample output reports. 
-<center>
-![image](https://github.com/user-attachments/assets/1ade8f7d-4fb6-42ce-9566-9264c391ec64)
-![image](https://github.com/user-attachments/assets/8984b89a-6eda-484d-a180-f0ae60f6bd90)
-![image](https://github.com/user-attachments/assets/7dc6f1d3-354a-470e-9b2c-28726a657c84)
+Below are sample output reports.
 
----
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1ade8f7d-4fb6-42ce-9566-9264c391ec64" alt="Report 1" />
+  <img src="https://github.com/user-attachments/assets/8984b89a-6eda-484d-a180-f0ae60f6bd90" alt="Report 2" />
+  <img src="https://github.com/user-attachments/assets/7dc6f1d3-354a-470e-9b2c-28726a657c84" alt="Report 3" />
+</p>
+
 
 ## 🚀 **Expected Benefits**
 
