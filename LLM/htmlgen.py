@@ -14,7 +14,7 @@ def read_file(filename):
 def setup_gemini():
     """Configure and get Gemini model."""
     try:
-        GOOGLE_API_KEY = "AIzaSyAjhjE1-c6vcFixyO6lOIHQUE8a15peRd0"  # Replace with actual API key
+        GOOGLE_API_KEY = ""  # Replace with actual API key
         genai.configure(api_key=GOOGLE_API_KEY)
         
         generation_config = {
